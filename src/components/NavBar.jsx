@@ -1,7 +1,7 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import { Menu, MenuButton, MenuList, MenuItem, Flex, Box, Spacer } from '@chakra-ui/react'
-import { Image } from '@chakra-ui/react'
+import cell_store_sin_fondo from '/src/assets/img/cell_store_sin_fondo.png'
 
 
 const NavBar = () => {
@@ -10,12 +10,12 @@ const NavBar = () => {
         
         <Flex bg='gray.100' color='black'>
         <Box boxSize='-moz-min-content'>
-  <h3>Logo</h3>
+  <img src={cell_store_sin_fondo} alt="logo" width={100} />
 </Box>
             <Spacer />
             <Menu>
                 <MenuButton>
-                    Categorias
+                   <strong>Categorias</strong>
                 </MenuButton>
                 <MenuList>
                     <MenuItem>Samsung</MenuItem>
